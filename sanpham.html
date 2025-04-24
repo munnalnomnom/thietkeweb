@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HexonStore | Hightech equipment </title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     </head>
 <body>
     <div class="header">
@@ -15,78 +17,458 @@
                         <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
                         <li><a href="tintuc.html">TIN TỨC</a></li>
                         <li><a href="tuyendung.html">TUYỂN DỤNG</a></li>
-                        <a href="homepage.html" class="logo">
-                            <img src="image/logo.png" alt="logo.png" width="69px"></a>
+                        <div class="logo-container">
+                            <a href="homepage.html" class="logo">
+                                <img src="image/logo.png" alt="logo" width="60px">
+                            </a>
+                        </div>
                         <li><a href="sanpham.html">SẢN PHẨM</a></li>
                         <li><a href="giohang.html">GIỎ HÀNG</a></li>
                         <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="login.html">LOGIN/SIGNIN</a></li>
+                        <li><a href="login.html">ĐĂNG NHẬP</a></li>
                     </ul>
-                    </nav>
-                 </div>
-        </div>
+                </nav>
+            </div>
     </div>
+    <section class="featured-products">
+        <div class="featured-container">
+            <h2 class="featured-title">Sản Phẩm Nổi Bật</h2>
+            
+            <div class="product-slider">
+                <!-- Radio buttons ẩn để điều khiển slider -->
+                <input type="radio" name="slider" id="slide1" class="slide-radio" checked>
+                <input type="radio" name="slider" id="slide2" class="slide-radio">
+                <input type="radio" name="slider" id="slide3" class="slide-radio">
+                <input type="radio" name="slider" id="slide4" class="slide-radio">
+                <input type="radio" name="slider" id="slide5" class="slide-radio">
+                
+                <!-- Nút điều hướng slider -->
+                <div class="slider-controls">
+                    <label for="slide5" class="slide-label prev" id="prev-slide1"><i class="fas fa-chevron-left"></i></label>
+                    <label for="slide2" class="slide-label next" id="next-slide1"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                
+                <div class="slider-controls">
+                    <label for="slide1" class="slide-label prev" id="prev-slide2"><i class="fas fa-chevron-left"></i></label>
+                    <label for="slide3" class="slide-label next" id="next-slide2"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                
+                <div class="slider-controls">
+                    <label for="slide2" class="slide-label prev" id="prev-slide3"><i class="fas fa-chevron-left"></i></label>
+                    <label for="slide4" class="slide-label next" id="next-slide3"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                
+                <div class="slider-controls">
+                    <label for="slide3" class="slide-label prev" id="prev-slide4"><i class="fas fa-chevron-left"></i></label>
+                    <label for="slide5" class="slide-label next" id="next-slide4"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                
+                <div class="slider-controls">
+                    <label for="slide4" class="slide-label prev" id="prev-slide5"><i class="fas fa-chevron-left"></i></label>
+                    <label for="slide1" class="slide-label next" id="next-slide5"><i class="fas fa-chevron-right"></i></label>
+                </div>
+                
+                <!-- Slides -->
+                <div class="product-slides">
+                    <!-- Slide 1 -->
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-tag">HOT</div>
+                                <img src="image/macprom4.jpg" alt="MacBook Pro M4">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Laptop</div>
+                                <h3 class="product-name">MacBook Pro M4</h3>
+                                <p class="product-description">
+                                    MacBook Pro mới nhất với chip M4, 16GB RAM, 512GB SSD, màn hình Retina 14 inch, thời lượng pin lên đến 20 giờ.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">41.990.000đ</span>
+                                    39.990.000đ
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    (120)
+                                </div>
+                                <a href="sanpham.html?id=macbook-pro-m4" class="product-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-tag">NEW</div>
+                                <img src="image/samsungs25.jpg" alt="Samsung Galaxy S25 Ultra">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Smartphone</div>
+                                <h3 class="product-name">Samsung Galaxy S25 Ultra</h3>
+                                <p class="product-description">
+                                    Smartphone cao cấp với màn hình AMOLED 6.8 inch, camera 200MP, RAM 16GB, bộ nhớ 512GB và pin 5000mAh.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">32.990.000đ</span>
+                                    29.990.000đ
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    (85)
+                                </div>
+                                <a href="sanpham.html?id=galaxy-s25-ultra" class="product-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-tag">SALE</div>
+                                <img src="image/dellxps16.avif" alt="Dell XPS 16">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Laptop</div>
+                                <h3 class="product-name">Dell XPS 16</h3>
+                                <p class="product-description">
+                                    Laptop cao cấp với màn hình OLED 16 inch, chip Intel Core i9, 32GB RAM, 1TB SSD và card đồ họa RTX 4080.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">49.990.000đ</span>
+                                    45.990.000đ
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    (64)
+                                </div>
+                                <a href="sanpham.html?id=dell-xps-16" class="product-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-tag">BEST SELLER</div>
+                                <img src="image/headphoneWH.avif" alt="Sony WH-1000XM5">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Tai nghe</div>
+                                <h3 class="product-name">Sony WH-1000XM5</h3>
+                                <p class="product-description">
+                                    Tai nghe chống ồn cao cấp với thời lượng pin 30 giờ, âm thanh Hi-Res, kết nối Bluetooth 5.2 và tính năng chống ồn tiên tiến.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">8.990.000đ</span>
+                                    7.490.000đ
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    (210)
+                                </div>
+                                <a href="sanpham.html?id=sony-wh-1000xm5" class="product-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 -->
+                    <div class="product-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <div class="product-tag">LIMITED</div>
+                                <img src="image/ipadm4.JPG" alt="iPad Pro M4">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Tablet</div>
+                                <h3 class="product-name">iPad Pro M4</h3>
+                                <p class="product-description">
+                                    Máy tính bảng cao cấp với chip M4, màn hình 11 inch mini-LED, 16GB RAM, 256GB bộ nhớ và hỗ trợ Apple Pencil Pro.
+                                </p>
+                                <div class="product-price">
+                                    <span class="old-price">28.990.000đ</span>
+                                    27.790.000đ
+                                </div>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    (98)
+                                </div>
+                                <a href="sanpham.html?id=ipad-pro-m3" class="product-button">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicators -->
+                <div class="slide-indicators">
+                    <label for="slide1" class="indicator-label indicator-1"></label>
+                    <label for="slide2" class="indicator-label indicator-2"></label>
+                    <label for="slide3" class="indicator-label indicator-3"></label>
+                    <label for="slide4" class="indicator-label indicator-4"></label>
+                    <label for="slide5" class="indicator-label indicator-5"></label>
+                </div>
+            </div>
+        </div>
+    </section>
     
-<div>
 
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
+    <section class="featured-products">
+        <div class="featured-container">
+            <h2 class="featured-title">Sản phẩm</h2>
+        </div>
+    </section>
+    <div class="product-list">
+        <div class="product-item">
+            <img src="image/macprom4.jpg" alt="MacBook Pro M4">
+            <h3>MacBook Pro M4</h3>
+            <p>Giá: 39.990.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                (120)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/samsungs25.jpg" alt="Samsung Galaxy S25 Ultra">
+            <h3>Samsung Galaxy S25 Ultra</h3>
+            <p>Giá: 29.990.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                (85)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/tainghemeo.png" alt="G35 tai meo">
+            <h3>Tai nghe G35 tai mèo chụp tai có dây</h3>
+            <p>Giá: 173.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                (999)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/headphoneWH.avif" alt="Sony WH-1000XM5">
+            <h3>Sony WH-1000XM5</h3>
+            <p>Giá: 7.490.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                (210)
+            </div>
+        </div>
 
-</div>
+        <div class="product-item">
+            <img src="image/ipadm4.JPG" alt="iPad Pro M4">
+            <h3>iPad Pro M4</h3>
+            <p>Giá: 27.790.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                (98)
+            </div>
+        </div>
 
+        <div class="product-item">
+            <img src="image/samsungs25.jpg" alt="Samsung Galaxy S25 Ultra">
+            <h3>Samsung Galaxy S25 Ultra</h3>
+            <p>Giá: 29.990.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                (85)
+            </div>
+        </div>
 
+        <div class="product-item">
+            <img src="image/dellxps16.avif" alt="Dell XPS 16">
+            <h3>Dell XPS 16</h3>
+            <p>Giá: 45.990.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                (64)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/asus-vivobook-go-15-e1504fa-r5-nj776w-glr-3-750x500.jpg" alt="Asusvivo go 15">
+            <h3>AsusVivo Go15</h3>
+            <p>Giá: 12.990.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (49)
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="image/hp-15-fc0085au-r5-a6vv8pa-glr-3-638624254810040294-750x500.jpg" alt="hp15">
+            <h3>HP 15 fc0085AU R5</h3>
+            <p>Giá: 13.390.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star-half-alt"></i>
+                (96)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/dell-inspiron-16-5620-1664438583.jpg" alt="dell-inspiron-16-5620-1664438583 3">
+            <h3>Dell insprion 16 5620 (2022)</h3>
+            <p>Giá: 13.490.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                (45)
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="image/dell-inspiron-5635-amd-1692870570.jpg" alt="dell 5635 amd">
+            <h3>Dell Inspiron 16 5635 AMD (2023)</h3>
+            <p>Giá: 12.990.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                (133)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/chuot-may-tinh-khong-day-newmen-f007-pink-1742954462.jpeg" alt="chuot newmen f007">
+            <h3>Chuột không dây Newmen F007 - Pink</h3>
+            <p>Giá: 120.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                (25)
+            </div>
+        </div>
+
+        <div class="product-item">
+            <img src="image/chuot-may-tinh-khong-day-newmen-f900s-1744949019.jpeg" alt="chuot f900s">
+            <h3>Chuột không dây Newmen F900S</h3>
+            <p>Giá: 650.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                (45)
+            </div>
+            
+        </div>
+
+        <div class="product-item">
+            <img src="image/chuot-may-tinh-khong-day-newmen-f1000-1744949401.jpeg" alt="newmen f1000">
+            <h3>Chuột không dây Newmen F1000 </h3>
+            <p>Giá: 660.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                (73)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/ban-phim-co-khong-day-dual-mode-newmen-gm610-global-1744876493.jpeg" alt="newmen gm610">
+            <h3>Bàn phím cơ không dây Dual Mode Newmen GM610</h3>
+            <p>Giá: 1.380.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                (83)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/ban-phim-co-khong-day-newmen-dual-mode-gm680-jungle-1744875942.png" alt="newmen gm680">
+            <h3>Bàn phím cơ không dây Newmen Dual Mode GM680 Jungle</h3>
+            <p>Giá: 1.630.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                (55)
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="image/chuot-gaming-logitech-g102-gen2-lightsync-den-1-750x500.jpg" alt="logitech g102">
+            <h3>Chuột chơi game có dây Logitech G102 Lightsync 8000DPI</h3>
+            <p>Giá: 390.000đ</p>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                (64)
+            </div>
+        </div>
 
 
 
