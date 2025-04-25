@@ -1182,93 +1182,7 @@ body {
 .janna:hover img {
     transform: scale(1.08);
 }
-.cartpage{
-    margin: 80px auto;
-    max-width: 88%;
-    background: #131212;
-    padding: 5px;
 
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.cart-info{
-    display: flex;
-    flex-wrap: wrap;
-}
-th{
-    text-align: left;
-    padding: 5px;
-    color: #f0f0f0;
-    background: #4e4d4c;
-    font-weight: normal;
-}
-td{
-    padding: 5px 10px;
-}
-td input{ width: 40px;
-    height: 30px;
-    padding: 5px;
-
-}
-td img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-td a{
-    color: #3498db;
-    text-decoration: none;
-}
-td a:hover{
-    text-decoration: underline;
-}
-td input{
-    color: #fcfcfc;
-    background: #1a1a1a;
-}
-.total-price{
-    display: flex;
-    justify-content: flex-end;
-}
-.total-price table{
-    border-top: 3px solid #f87224;
-    min-width: 10%;
-    max-width: 400px;
-}
-td:last-child{
-    text-align: right;
-}
-th:last-child{
-    text-align: right;
-}
-tr:nth-child(odd){
-    background: #1a1a1a;
-}
-.cart-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    text-align: center;
-}
-.cart-footer button{
-    background: #858281;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-.cart-button{
-    display: block;
-    position:relative;
-    text-align: right;
-    margin: 0 auto;
-
-}
 .products-section {
     padding: 120px 0 60px;
     background: linear-gradient(145deg, #151515, #0c0c0c);
@@ -1640,16 +1554,17 @@ tr:nth-child(odd){
     border-bottom: 1px solid #222;
 }
 
+
+
+.specs-table td {
+    padding: 10px;
+    color: #e0e0e0;
+}
 .specs-table th {
     padding: 10px;
     text-align: left;
     width: 30%;
     color: #888;
-}
-
-.specs-table td {
-    padding: 10px;
-    color: #e0e0e0;
 }
 
 .review-item {
