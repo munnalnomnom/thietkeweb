@@ -5,86 +5,137 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HexonStore | Hightech equipment </title>
         <link rel="stylesheet" href="style.css">
-    </head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
-                        <li><a href="tintuc.html">TIN TỨC</a></li>
-                        <li><a href="tuyendung.html">TUYỂN DỤNG</a></li>
-                        <a href="homepage.html" class="logo">
-                            <img src="image/logo.png" alt="logo.png" width="69px"></a>
-                        <li><a href="sanpham.html">SẢN PHẨM</a></li>
-                        <li><a href="giohang.html">GIỎ HÀNG</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="login.html">LOGIN/SIGNIN</a></li>
-                    </ul>
-                    </nav>
-                 </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="tintuc.html">TIN TỨC</a></li>
+                <li><a href="tuyendung.html">TUYỂN DỤNG</a></li>
+                <div class="logo-container">
+                    <a href="homepage.html" class="logo">
+                        <img src="image/logo.png" alt="logo" width="60px">
+                    </a>
+                </div>
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="giohang.html">GIỎ HÀNG</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="login.html">ĐĂNG NHẬP</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="featured-products">
+        <div class="featured-container">
+            <h2 class="featured-title">Tin tức mới nhất</h2>
         </div>
+    </section>
+    <div class="article">
+        <div class="category-tabs">
+            <select class="filter-select" style="border: none; background: none;" >
+                <option value="">Sắp xếp</option>
+                <option value="newest">Mới nhất</option>
+                <option value="price-asc">Cũ nhất</option>
+            </select>
+            <a href="tintuc.html" class="category-tab active">Tất cả</a>
+            <a href="tintuc.html?category=important" class="category-tab">Tin quan trọng</a>
+            <a href="tintuc.html?category=influencer" class="category-tab">Người nổi tiếng và Hexon</a>
+            <a href="tintuc.html?category=kinhdoanh" class="category-tab">Tin kinh doanh</a>
+        </div>
+
+        
+    </div>
+    <div class="articles">
+        <a href="elonthamhexon.html" class="collumnArticle"><article>
+            <img src="image/hinhanhcuahang.jpg" alt="">
+            <div class="footerArticle">
+                <div class="titleArticle">Elon Múk tham quan HexonStore </div>
+                <h3>Ngày 27/12/2036 tỉ phú Elon Múk đã đến thăm HexonStore cơ sở Thanh Xuân, Hà N...</h3>
+                <div class="article-time"> <i class="fa fa-calendar"></i> 27/12/2036</div>
+                <div class="newsMeta">Người nổi tiếng nói gì về Hexon</div>
+            </div>
+        </article></a>
+        <a href="tintucsinhnhat.html" class="collumnArticle">
+            <article>
+                <img src="image/anmung.jpg" alt="">
+                <div class="footerArticle">
+                    <div class="titleArticle">Mừng sinh nhật HexonGroup</div>
+                    <h3>Ngày 18/10/2036 HexonStore đã tổ chức sinh nhật lần thứ 11 với sự tham gia của...</h3>
+                    <div class="article-time"> <i class="fa fa-calendar"></i> 18/10/2036</div>
+                    <div class="newsMeta">
+                        <p>Tin tức quan trọng</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="" class="collumnArticle">
+            <article>
+                <img src="image/hoptac.jpg" alt="">
+                <div class="footerArticle">
+                    <div class="titleArticle">Hexxon Store x Logitech </div>
+                    <h3> Hành trình nâng tầm trải nghiệm khách hàng của HexonStore và con đường nâng tầm...</h3>
+                    <div class="article-time"> <i class="fa fa-calendar"></i> 27/12/2036</div>
+                    <div class="newsMeta">
+                        <p>Tin kinh doanh</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <a href="" class="collumnArticle"><article>
+            <img src="image/hopcongty.jpg" alt="">
+            <div class="footerArticle">
+                <div class="titleArticle">HexonStore "thay áo mới"</div>
+                <h3>23/8/2036 hội đồng HexonStore đã quyết định thay thế hình ảnh của HexonStore...</h3>
+                <div class="article-time"> <i class="fa fa-calendar"></i> 27/12/2036</div>
+                <div class="newsMeta">
+                    <p>Tin tức quan trọng</p>
+                </div>
+            </div>
+        </article>
+    </a>
+    <a href="" class="collumnArticle">
+        <article>
+            <img src="image/salevip.jpg" alt="">
+            <div class="footerArticle">
+                <div class="titleArticle">Khuyến mại nóng hổi</div>
+                <h3>Chương trình khuyến mại chỉ có tại HexonStore với ưu đãi lên đến 98% giá trị sản phẩm...</h3>
+                <div class="article-time"> <i class="fa fa-calendar"></i> 27/12/2036</div>
+                <div class="newsMeta">
+                    <p>Tin tức quan trọng</p>
+                </div>
+            </div>
+        </article>
+        
+    </a>
+    <a href="" class="janna">
+        <article>
+            <img src="image/specialnews.avif" alt="">
+            <div class="footerArticle">
+                <div class="titleArticle">Bản tin đặc biệt</div>
+                <h3>TIN MỚI NHẬN:Đặc nhiệm Janna của Hexon Store đang lao vào 1 cơn giông bất ngờ...</h3>
+                <div class="article-time"> <i class="fa fa-calendar"></i> 27/12/2036</div>
+                <div class="newsMeta">
+                    <p>Tin tức quan trọng</p>
+                </div>
+            </div>
+        </article>
+    </a>
+    <a href="" class="collumnArticle"> <article>
+        <img src="image/hoidap.avif" alt="">
+        <div class="footerArticle">
+            <div class="titleArticle">Phỏng vấn tại HexonStore</div>
+            <h3>Nhằm nâng cao chất lượng trải nghiệm của khách hàng, vào ngày 27/6/2036 chúng tôi...</h3>
+            <div class="article-time"> <i class="fa fa-calendar"></i> 27/12/2036</div>
+            <div class="newsMeta">
+                <p>Tin tức quan trọng</p>
+            </div>
+        </div>
+    </article></a>
     </div>
     
-<div>
-
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-
-</div>
 
 
 
