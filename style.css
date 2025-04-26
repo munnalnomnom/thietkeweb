@@ -1595,7 +1595,7 @@ margin: 0 30px;
 .form-container{
     background: #1a1a1a;
     width: 300px;
-    height: 400px;
+    height: 400px   ;
     position: relative;
     text-align: center;
     padding: 20px 0;
@@ -1645,6 +1645,12 @@ form .btn:focus {
 }
 #loginForm{
     left: -330px;
+}
+#nhanvienForm{
+    left: -330px;
+}
+#dailyForm{
+    left: 0;
 }
 #registerForm{
     left: 0;
@@ -1750,4 +1756,24 @@ margin: 5px 0;
     border: 1px solid rpba(0, 0, 0, 0.4);
     border-radius: 15%;
     margin: 10px 0;
+}
+.col-1-tuyendung{
+    display: inline-block;
+    place-items:  center;
+    border-radius: 12px;
+    max-width: 55%;
+    height: auto;
+    text-align: center;
+    background: #181618;
+    padding: 20px 20px;
+    opacity: 0.85;
+}
+.yeucaudaily{
+    color: #fcfcfc;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    text-align: left;
+    max-width: 80%;
+    height: auto;
 }
