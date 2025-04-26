@@ -1582,7 +1582,7 @@ margin: 0 30px;
     text-align: left;
 }
 
-/*----- Account page ----*/
+/*----- Mục Account page ----*/
 .account-page {
     padding: 50px 0;
     background: linear-gradient(145deg, #151515, #0c0c0c);
@@ -1645,12 +1645,6 @@ form .btn:focus {
 }
 #loginForm{
     left: -330px;
-}
-#nhanvienForm{
-    left: -330px;
-}
-#dailyForm{
-    left: 0;
 }
 #registerForm{
     left: 0;
@@ -1776,4 +1770,367 @@ margin: 5px 0;
     text-align: left;
     max-width: 80%;
     height: auto;
+}
+        /* Phần CSS cho Modal xác nhận thêm vào giỏ hàng */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .modal-content {
+            background: #141414;
+            margin: 15% auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+            max-width: 450px;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #888;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .close-modal:hover {
+            color: #3498db;
+        }
+        
+        .modal-title {
+            color: #f0f0f0;
+            font-size: 22px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .modal-product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #1a1a1a;
+            border-radius: 5px;
+        }
+        
+        .modal-product-image {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        
+        .modal-product-details h4 {
+            color: #f0f0f0;
+            margin-bottom: 5px;
+            font-size: 17px;
+        }
+        
+        .modal-product-price {
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .modal-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .continue-shopping-btn, .view-cart-btn {
+            flex: 1;
+            padding: 12px 0;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .continue-shopping-btn {
+            background: #1a1a1a;
+            color: #f0f0f0;
+            border: 2px solid #333;
+        }
+        
+        .continue-shopping-btn:hover {
+            background: #222;
+        }
+        
+        .view-cart-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+        }
+        
+        .view-cart-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        /* Thêm style cho nút xem giỏ hàng */
+        .view-cart-button {
+            background: #1a1a1a;
+            color: #3498db;
+            border: 2px solid #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-left: 10px;
+        }
+        
+        .view-cart-button:hover {
+            background: rgba(52, 152, 219, 0.1);
+        }
+        /* CSS cho phần phân loại sản phẩm */
+.hidden {
+    display: none !important;
+}
+
+.active-filter {
+    background: #3498db !important;
+    color: white !important;
+}
+
+.filter-wrapper {
+    position: relative;
+}
+
+.filter-select {
+    padding: 8px 15px;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-select:hover {
+    background: #1a1a1a;
+    border-color: #3498db;
+}
+
+.filter-dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 5px;
+    z-index: 100;
+    width: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filter-dropdown.show {
+    display: block;
+}
+
+.filter-dropdown-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #e0e0e0;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.filter-dropdown-item:hover {
+    background: #1a1a1a;
+    color: #3498db;
+}
+
+.filter-dropdown-item.selected {
+    background: #3498db;
+    color: white;
+}
+
+.clear-filters {
+    background: #252525;
+    color: #e0e0e0;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 15px;
+}
+
+.clear-filters:hover {
+    background: #333;
+    color: #3498db;
+}
+
+.active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.filter-tag {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.filter-tag .remove-filter {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #888;
+    transition: all 0.2s ease;
+}
+
+.filter-tag .remove-filter:hover {
+    color: #3498db;
+}
+
+.price-range {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.price-input {
+    width: 100px;
+    padding: 8px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #e0e0e0;
+}
+
+.apply-price {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apply-price:hover {
+    background: #2980b9;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
+    font-size: 18px;
+}
+
+.no-results p {
+    margin-bottom: 20px;
+}
+
+/* Phần phân loại */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #141414;
+    color: #e0e0e0;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    outline: none;
+}
+
+.category-tab.active, .category-tab:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* Chỉnh Responsive  */
+@media (max-width: 992px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-box {
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .filter-group {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .filter-wrapper {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-wrapper {
+        width: 100%;
+    }
+    
+    .filter-select {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .filter-dropdown {
+        width: 100%;
+    }
+    
+    .clear-filters {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .category-tab {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
 }
