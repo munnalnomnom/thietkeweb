@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HexonStore | Hightech equipment </title>
+    <title>Chi Tiết Sản Phẩm - MacBook Pro M4 | HexonStore</title>
+    <meta name="description" content="MacBook Pro M4 - Laptop cao cấp với chip M4 mạnh mẽ, RAM 16GB, SSD 512GB">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+    </style>
 </head>
 <body>
-    <!-- Navbar with company name -->
     <div class="navbar">
         <nav>
             <ul>
@@ -29,283 +32,308 @@
         </nav>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Shop đồ công nghệ cao <br><span>Đảm bảo chất lượng</span></h1>
-                    <p>HexonStore là một cửa hàng trực tuyến chuyên cung cấp các sản phẩm công nghệ cao, bao gồm máy tính xách tay, điện thoại thông minh, máy tính bảng và các thiết bị điện tử khác. Chúng tôi cam kết mang đến cho khách hàng những sản phẩm chất lượng nhất với giá cả hợp lý.</p>
-                    <p>Chúng tôi luôn nỗ lực để đáp ứng nhu cầu của khách hàng và cung cấp dịch vụ tốt nhất. Hãy đến với HexonStore để trải nghiệm mua sắm trực tuyến tuyệt vời nhất!</p>
-                    <div class="hero-buttons">
-                        <a href="sanpham.html" class="btn-primary">Khám phá ngay</a>
-                        <a href="gioithieu.html" class="btn-secondary">Về chúng tôi</a>
-                    </div>
-                </div>
-                <div class="hero-img">
-                    <img src="./image/laptop-removebg-preview.png" alt="laptop">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="featured-products">
-        <div class="featured-container">
-            <h2 class="featured-title">Sản Phẩm Nổi Bật</h2>
+    <!-- Phan chi tiet san pham -->
+    <section class="product-detail-section">
+        <div class="container">
             
-            <div class="product-slider">
-                <!-- Radio buttons ẩn để điều khiển slider -->
-                <input type="radio" name="slider" id="slide1" class="slide-radio" checked>
-                <input type="radio" name="slider" id="slide2" class="slide-radio">
-                <input type="radio" name="slider" id="slide3" class="slide-radio">
-                <input type="radio" name="slider" id="slide4" class="slide-radio">
-                <input type="radio" name="slider" id="slide5" class="slide-radio">
-                
-                <!-- Nút điều hướng slider -->
-                <div class="slider-controls">
-                    <label for="slide5" class="slide-label prev" id="prev-slide1"><i class="fas fa-chevron-left"></i></label>
-                    <label for="slide2" class="slide-label next" id="next-slide1"><i class="fas fa-chevron-right"></i></label>
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="homepage.html">Trang chủ</a>
+                <span>/</span>
+                <a href="sanpham.html">Sản phẩm</a>
+                <span>/</span>
+                <span>MacBook Pro M4</span>
+            </div>
+            
+            <!-- Product Header -->
+            <div class="product-header">
+                <div class="product-meta">
+                    <span class="date"><i class="far fa-calendar-alt"></i> Ngày đăng: 20/04/2025</span>
+                    <span class="category"><i class="far fa-folder"></i> Danh mục: <a href="sanpham.html?category=laptop">Laptop</a></span>
+                </div>
+                <h1 class="product-title">MacBook Pro M4 - Hiệu năng đột phá, thiết kế hoàn hảo</h1>
+            </div>
+            
+            <!-- San pham chinh -->
+            <div class="product-main">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="/image/macprom4.jpg" alt="MacBook Pro M4">
+                    </div>
                 </div>
                 
-                <div class="slider-controls">
-                    <label for="slide1" class="slide-label prev" id="prev-slide2"><i class="fas fa-chevron-left"></i></label>
-                    <label for="slide3" class="slide-label next" id="next-slide2"><i class="fas fa-chevron-right"></i></label>
-                </div>
-                
-                <div class="slider-controls">
-                    <label for="slide2" class="slide-label prev" id="prev-slide3"><i class="fas fa-chevron-left"></i></label>
-                    <label for="slide4" class="slide-label next" id="next-slide3"><i class="fas fa-chevron-right"></i></label>
-                </div>
-                
-                <div class="slider-controls">
-                    <label for="slide3" class="slide-label prev" id="prev-slide4"><i class="fas fa-chevron-left"></i></label>
-                    <label for="slide5" class="slide-label next" id="next-slide4"><i class="fas fa-chevron-right"></i></label>
-                </div>
-                
-                <div class="slider-controls">
-                    <label for="slide4" class="slide-label prev" id="prev-slide5"><i class="fas fa-chevron-left"></i></label>
-                    <label for="slide1" class="slide-label next" id="next-slide5"><i class="fas fa-chevron-right"></i></label>
-                </div>
-                
-                <!-- Slides -->
-                <div class="product-slides">
-                    <!-- Slide 1 -->
-                    <div class="product-slide">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <div class="product-tag">HOT</div>
-                                <img src="/image/macprom4.jpg" alt="MacBook Pro M4">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Laptop</div>
-                                <h3 class="product-name">MacBook Pro M4</h3>
-                                <p class="product-description">
-                                    MacBook Pro mới nhất với chip M4, 16GB RAM, 512GB SSD, màn hình Retina 14 inch, thời lượng pin lên đến 20 giờ.
-                                </p>
-                                <div class="product-price">
-                                    <span class="old-price">41.990.000đ</span>
-                                    39.990.000đ
-                                </div>
-                                <div class="product-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    (120)
-                                </div>
-                                <a href="sanpham.html?id=macbook-pro-m4" class="product-button">Xem chi tiết</a>
-                            </div>
+                <!-- Chi tiet san pham -->
+                <div class="product-info">
+                    <div class="product-rating">
+                        <div class="rating-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
+                        <span>4.5/5 (120 đánh giá)</span>
                     </div>
                     
-                    <!-- Slide 2 -->
-                    <div class="product-slide">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <div class="product-tag">NEW</div>
-                                <img src="/image/samsungs25.jpg" alt="Samsung Galaxy S25 Ultra">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Smartphone</div>
-                                <h3 class="product-name">Samsung Galaxy S25 Ultra</h3>
-                                <p class="product-description">
-                                    Smartphone cao cấp với màn hình AMOLED 6.8 inch, camera 200MP, RAM 16GB, bộ nhớ 512GB và pin 5000mAh.
-                                </p>
-                                <div class="product-price">
-                                    <span class="old-price">32.990.000đ</span>
-                                    29.990.000đ
-                                </div>
-                                <div class="product-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    (85)
-                                </div>
-                                <a href="sanpham.html?id=galaxy-s25-ultra" class="product-button">Xem chi tiết</a>
-                            </div>
-                        </div>
+                    <div class="product-price">
+                        <span class="old-price">41.990.000đ</span>
+                        39.990.000đ
                     </div>
                     
-                    <!-- Slide 3 -->
-                    <div class="product-slide">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <div class="product-tag">SALE</div>
-                                <img src="/image/dellxps16.avif" alt="Dell XPS 16">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Laptop</div>
-                                <h3 class="product-name">Dell XPS 16</h3>
-                                <p class="product-description">
-                                    Laptop cao cấp với màn hình OLED 16 inch, chip Intel Core i9, 32GB RAM, 1TB SSD và card đồ họa RTX 4080.
-                                </p>
-                                <div class="product-price">
-                                    <span class="old-price">49.990.000đ</span>
-                                    45.990.000đ
-                                </div>
-                                <div class="product-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    (64)
-                                </div>
-                                <a href="sanpham.html?id=dell-xps-16" class="product-button">Xem chi tiết</a>
-                            </div>
-                        </div>
+                    <div class="product-description">
+                        <p><strong>Mô tả ngắn:</strong> MacBook Pro M4 là thế hệ mới nhất từ Apple với chip M4 mạnh mẽ, màn hình 
+                        Retina 14 inch ProMotion 120Hz, RAM 16GB và SSD 512GB siêu nhanh. Thiết kế sang trọng từ nhôm nguyên khối, 
+                        pin sử dụng đến 22 giờ và đầy đủ các cổng kết nối.</p>
                     </div>
                     
-                    <!-- Slide 4 -->
-                    <div class="product-slide">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <div class="product-tag">BEST SELLER</div>
-                                <img src="/image/headphoneWH.avif" alt="Sony WH-1000XM5">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Tai nghe</div>
-                                <h3 class="product-name">Sony WH-1000XM5</h3>
-                                <p class="product-description">
-                                    Tai nghe chống ồn cao cấp với thời lượng pin 30 giờ, âm thanh Hi-Res, kết nối Bluetooth 5.2 và tính năng chống ồn tiên tiến.
-                                </p>
-                                <div class="product-price">
-                                    <span class="old-price">8.990.000đ</span>
-                                    7.490.000đ
-                                </div>
-                                <div class="product-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    (210)
-                                </div>
-                                <a href="sanpham.html?id=sony-wh-1000xm5" class="product-button">Xem chi tiết</a>
-                            </div>
+                    <div class="product-options">
+                        <div class="option-title">Màu sắc:</div>
+                        <div class="color-options">
+                            <a href="#" class="color-option color-black"></a>
+                            <a href="#" class="color-option color-white"></a>
+                        </div>
+                        
+                        <div class="option-title">Dung lượng:</div>
+                        <div class="storage-options">
+                            <a href="#" class="storage-option">256GB</a>
+                            <a href="#" class="storage-option">512GB</a>
+                            <a href="#" class="storage-option">1TB</a>
+                            <a href="#" class="storage-option">2TB</a>
                         </div>
                     </div>
-                    
-                    <!-- Slide 5 -->
-                    <div class="product-slide">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <div class="product-tag">LIMITED</div>
-                                <img src="/image/ipadm4.JPG" alt="iPad Pro M4">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-category">Tablet</div>
-                                <h3 class="product-name">iPad Pro M4</h3>
-                                <p class="product-description">
-                                    Máy tính bảng cao cấp với chip M4, màn hình 11 inch mini-LED, 16GB RAM, 256GB bộ nhớ và hỗ trợ Apple Pencil Pro.
-                                </p>
-                                <div class="product-price">
-                                    <span class="old-price">28.990.000đ</span>
-                                    27.790.000đ
-                                </div>
-                                <div class="product-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    (98)
-                                </div>
-                                <a href="sanpham.html?id=ipad-pro-m3" class="product-button">Xem chi tiết</a>
-                            </div>
+                    <!-- Thêm nút giỏ hàng-->                    
+                    <div class="product-actions">
+                        <input type="number" id="quantity" name="quantity" class="quantity" value="1" min="1" max="10">
+                        <button id="add-to-cart-btn" class="add-to-cart" 
+                            data-id="macbook-pro-m4" 
+                            data-name="Macbook Pro M4" 
+                            data-price="3999000" 
+                            data-image="/image/macprom4.jpg">Thêm vào giỏ hàng</button>
+                        <button id="view-cart-btn" class="view-cart-button"><i class="fas fa-shopping-cart"></i> Xem giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mo ta -->
+            <h2 class="section-title">Mô tả sản phẩm</h2>
+            <div class="product-description">
+                <p>MacBook Pro M4 là thế hệ mới nhất từ Apple, mang đến hiệu năng vượt trội và trải nghiệm người dùng tuyệt vời. Với chip M4 mạnh mẽ, MacBook Pro mới có khả năng xử lý mọi tác vụ từ công việc văn phòng đến chỉnh sửa ảnh, render video chuyên nghiệp.</p>
+                <p>MacBook Pro M4 sở hữu thiết kế nhôm nguyên khối cao cấp, bền bỉ và sang trọng. Màn hình Retina 14 inch với độ phân giải cao, hỗ trợ công nghệ ProMotion với tần số quét 120Hz, dải màu rộng P3 và độ sáng tối đa lên đến 1600 nits cho trải nghiệm hình ảnh sống động, chân thực.</p>
+            </div>
+            
+            <!-- Thong so -->
+            <h2 class="section-title">Thông số kỹ thuật</h2>
+            <table class="specs-table">
+                <tr>
+                    <th>Bộ vi xử lý</th>
+                    <td>Apple M4 (12-core CPU, 18-core GPU)</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>16GB Unified Memory</td>
+                </tr>
+                <tr>
+                    <th>Ổ cứng</th>
+                    <td>512GB SSD</td>
+                </tr>
+                <tr>
+                    <th>Màn hình</th>
+                    <td>14.2 inch Liquid Retina XDR, 120Hz</td>
+                </tr>
+                <tr>
+                    <th>Pin</th>
+                    <td>Lên đến 22 giờ sử dụng</td>
+                </tr>
+                <tr>
+                    <th>Kích thước</th>
+                    <td>31.26 x 22.12 x 1.55 cm</td>
+                </tr>
+                <tr>
+                    <th>Trọng lượng</th>
+                    <td>1.6 kg</td>
+                </tr>
+                <tr>
+                    <th>Bảo hành</th>
+                    <td>24 tháng chính hãng</td>
+                </tr>
+            </table>
+            
+            <!-- Phan reviews -->
+            <h2 class="section-title">Đánh giá sản phẩm</h2>
+            
+            <!-- Review item -->
+            <div class="review-item">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">
+                            <img src="/image/Trallalero tralala.jpg" alt="Nguyễn Văn A">
+                        </div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Cá mập Tralala</div>
+                            <div class="review-date">22/04/2025</div>
                         </div>
                     </div>
                 </div>
+                <h3 class="review-title">Sản phẩm tuyệt vời, đáng đồng tiền bát gạo!</h3>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="review-content">
+                    Quá tuyệt vời! MacBook Pro M4 đúng là một con quái vật về hiệu năng. Mình làm đồ họa và edit video, mọi thứ đều mượt mà. Pin thì quá trâu, dùng cả ngày không lo hết...
+                </div>
+                <a href="danhgia.html?id=review123" class="review-link">Xem đánh giá đầy đủ</a>
+            </div>
+            
+            <div class="review-item">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">
+                            <img src="/image/tung tung tung.jpg" alt="Tung Tung Tung Sahur">
+                        </div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Tung Tung Sahur</div>
+                            <div class="review-date">15/04/2025</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="review-title">Hiệu năng cao, nhưng giá hơi đắt</h3>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="review-content">
+                    Mình đã nâng cấp từ MacBook Pro M1 lên M4 và thấy sự khác biệt rõ rệt về hiệu năng. Tuy nhiên, giá hơi cao và vẫn tiếc là Apple không trang bị thêm cổng USB-A...
+                </div>
+                <a href="danhgia.html?id=review456" class="review-link">Xem đánh giá đầy đủ</a>
+            </div>
+            
+            <div class="review-item">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">
+                            <img src="/image/bombardino.jpg" alt="Cá sấu Bombardino">
+                        </div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Cá sấu Bombardino</div>
+                            <div class="review-date">08/04/2025</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="review-title">Tuyệt vời cho lập trình, còn vài vấn đề tương thích</h3>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="review-content">
+                    Là một lập trình viên, chiếc MacBook Pro M4 thực sự đáp ứng mọi nhu cầu của mình. Xử lý code và chạy nhiều máy ảo cùng lúc không hề giật lag...
+                </div>
+                <a href="danhgia.html?id=review789" class="review-link">Xem đánh giá đầy đủ</a>
+            </div>
+            
+            <!-- Phan danh gia/review -->
+            <form class="review-form" action="submit-review.html" method="post">
+                <h3>Viết đánh giá của bạn</h3>
+                <div class="form-group">
+                    <label class="form-label">Tiêu đề đánh giá *</label>
+                    <input type="text" name="review_title" class="form-input" required placeholder="Nhập tiêu đề đánh giá">
+                </div>
                 
-                <!-- Indicators -->
-                <div class="slide-indicators">
-                    <label for="slide1" class="indicator-label indicator-1"></label>
-                    <label for="slide2" class="indicator-label indicator-2"></label>
-                    <label for="slide3" class="indicator-label indicator-3"></label>
-                    <label for="slide4" class="indicator-label indicator-4"></label>
-                    <label for="slide5" class="indicator-label indicator-5"></label>
+                <div class="form-group">
+                    <label class="form-label">Đánh giá của bạn *</label>
+                    <select name="rating" class="form-input" required>
+                        <option value="5">5 sao</option>
+                        <option value="4">4 sao</option>
+                        <option value="3">3 sao</option>
+                        <option value="2">2 sao</option>
+                        <option value="1">1 sao</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Nhận xét của bạn *</label>
+                    <textarea class="form-textarea" name="review_content" placeholder="Chia sẻ trải nghiệm của bạn..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Tên của bạn *</label>
+                    <input type="text" name="name" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email của bạn *</label>
+                    <input type="email" name="email" class="form-input" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Gửi đánh giá</button>
+            </form>
+            
+            <!-- san pham lien quan -->
+            <h2 class="section-title">Sản phẩm liên quan</h2>
+            <div class="related-products">
+                <!-- san pham 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/image/dellxps16.avif" alt="Dell XPS 16">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Laptop</div>
+                        <h3 class="product-name">Dell XPS 16</h3>
+                        <div class="product-price">
+                            <span class="old-price">49.990.000đ</span>
+                            45.990.000đ
+                        </div>
+                        <a href="dell-xps-16.html" class="product-button">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <!-- san pham 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/image/ipadm4.JPG" alt="iPad Pro M4">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Tablet</div>
+                        <h3 class="product-name">iPad Pro M4</h3>
+                        <div class="product-price">
+                            <span class="old-price">28.990.000đ</span>
+                            27.790.000đ
+                        </div>
+                        <a href="ipad-pro-m4.html" class="product-button">Xem chi tiết</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="categories">
-        <div class="smallContainer">
-            <h2 class="category-title">Danh Mục Sản Phẩm</h2>
-            <div class="category-grid">
-                <a href="sanpham.html?category=smartphone" class="category-item">
-                    <img src="/image/dienthoai.jpg" alt="Điện thoại">
-                    <div class="category-overlay">
-                        <h3>Điện thoại</h3>
-                        <p>Các mẫu điện thoại mới nhất từ các thương hiệu hàng đầu</p>
-                    </div>
-                </a>
-                <a href="sanpham.html?category=laptop" class="category-item">
-                    <img src="/image/laptop2.png" alt="Laptops">
-                    <div class="category-overlay">
-                        <h3>Laptop</h3>
-                        <p>Đa dạng các dòng laptop từ gaming đến văn phòng</p>
-                    </div>
-                </a>
-                <a href="sanpham.html?category=accessories" class="category-item">
-                    <img src="/image/keyboard.png" alt="Phụ kiện">
-                    <div class="category-overlay">
-                        <h3>Các phụ kiện khác</h3>
-                        <p>Bàn phím, chuột, tai nghe và nhiều phụ kiện khác</p>
-                    </div>
-                </a>
+    <!-- Modal xác nhận thêm vào giỏ hàng -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Sản phẩm đã được thêm vào giỏ hàng</h3>
+            <div class="modal-product">
+                <img src="/image/macprom4.jpg" alt="MacBook Pro M4" class="modal-product-image">
+                <div class="modal-product-details">
+                    <h4>MacBook Pro M4</h4>
+                    <p class="modal-product-price">39.990.000đ</p>
+                    <p id="modal-quantity">Số lượng: 1</p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="continue-shopping" class="continue-shopping-btn">Tiếp tục mua sắm</button>
+                <button id="view-cart" class="view-cart-btn">Xem giỏ hàng</button>
             </div>
         </div>
-    </section>
-
-    <!-- Brands Section -->
-    <section class="brands">
-        <div class="smallContainer">
-            <h2 class="brands-title">Thương Hiệu Đối Tác</h2>
-            <div class="brands-slider">
-                <a href="sanpham.html?brand=asus" class="brand-logo">
-                    <img src="/image/ASUS logo grey.png" alt="ASUS">
-                </a>
-                <a href="sanpham.html?brand=dell" class="brand-logo">
-                    <img src="/image/Delllogo.png" alt="Dell">
-                </a>
-                <a href="sanpham.html?brand=lenovo" class="brand-logo">
-                    <img src="/image/Lenovologo.png" alt="Lenovo">
-                </a>
-                <a href="sanpham.html?brand=logitech" class="brand-logo">
-                    <img src="/image/logitechlogo.png" alt="Logitech">
-                </a>
-                <a href="sanpham.html?brand=samsung" class="brand-logo">
-                    <img src="/image/samsunglogo.png" alt="Samsung">
-                </a>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -317,7 +345,6 @@
                         <li><a href="gioithieu.html">Giới thiệu</a></li>
                         <li><a href="tintuc.html">Tin tức</a></li>
                         <li><a href="tuyendung.html">Tuyển dụng</a></li>
-                        <li><a href="gioithieu.html#contact">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -325,37 +352,16 @@
                     <ul class="footer-links">
                         <li><a href="faq.html#buy">Hướng dẫn mua hàng</a></li>
                         <li><a href="faq.html#return">Chính sách đổi trả</a></li>
-                        <li><a href="faq.html#warranty">Bảo hành sản phẩm</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Liên hệ</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Thanh Xuân, Hà Nội</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Hà Nội</li>
                         <li><i class="fas fa-phone"></i> 123456789</li>
                         <li><i class="fas fa-envelope"></i> info@hexonstore.com</li>
                     </ul>
-                    <div class="social-links">
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Địa chỉ</h3>
-                    <div class="address-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17718.441070286175!2d105.82730129913115!3d20.99891379044362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac71752d8f79%3A0xd2ec575c01017afa!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gUXXhu5FjIETDom4gKE5FVSk!5e0!3m2!1svi!2s!4v1745337197504!5m2!1svi!2s" 
-                            width="100%" 
-                            height="150" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -363,5 +369,6 @@
             </div>
         </div>
     </footer>
+<script src="product-script.js"></script>
 </body>
 </html>
