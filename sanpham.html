@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sản Phẩm | HexonStore</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -36,55 +37,75 @@
             
             <!-- Category tabs -->
             <div class="category-tabs">
-                <a href="sanpham.html" class="category-tab active">Tất cả</a>
-                <a href="sanpham.html?category=laptop" class="category-tab">Laptop</a>
-                <a href="sanpham.html?category=smartphone" class="category-tab">Smartphone</a>
-                <a href="sanpham.html?category=tablet" class="category-tab">Tablet</a>
-                <a href="sanpham.html?category=tainghe" class="category-tab">Tai nghe</a>
-                <a href="sanpham.html?category=phukien" class="category-tab">Phụ kiện</a>
+                <button class="category-tab active" data-category="all">Tất cả</button>
+                <button class="category-tab" data-category="laptop">Laptop</button>
+                <button class="category-tab" data-category="smartphone">Smartphone</button>
+                <button class="category-tab" data-category="tablet">Tablet</button>
+                <button class="category-tab" data-category="tainghe">Tai nghe</button>
+                <button class="category-tab" data-category="phukien">Phụ kiện</button>
             </div>
+            
+            <!-- Active filters display -->
+            <div class="active-filters" id="activeFilters"></div>
             
             <!-- Filter and search -->
             <div class="filter-container">
                 <div class="filter-group">
-                    <select class="filter-select">
-                        <option value="" disabled selected>Thương hiệu</option>
-                        <option value="apple">Apple</option>
-                        <option value="samsung">Samsung</option>
-                        <option value="dell">Dell</option>
-                        <option value="asus">Asus</option>
-                        <option value="sony">Sony</option>
-                        <option value="logitech">Logitech</option>
-                        <option value="lenovo">Lenovo</option>
-                    </select>
+                    <div class="filter-wrapper">
+                        <button class="filter-select" id="brandFilter">Thương hiệu <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-dropdown" id="brandDropdown">
+                            <div class="filter-dropdown-item" data-brand="apple">Apple</div>
+                            <div class="filter-dropdown-item" data-brand="samsung">Samsung</div>
+                            <div class="filter-dropdown-item" data-brand="dell">Dell</div>
+                            <div class="filter-dropdown-item" data-brand="asus">Asus</div>
+                            <div class="filter-dropdown-item" data-brand="sony">Sony</div>
+                            <div class="filter-dropdown-item" data-brand="logitech">Logitech</div>
+                            <div class="filter-dropdown-item" data-brand="xiaomi">Xiaomi</div>
+                            <div class="filter-dropdown-item" data-brand="lenovo">Lenovo</div>
+                        </div>
+                    </div>
                     
-                    <select class="filter-select">
-                        <option value="" disabled selected>Giá</option>
-                        <option value="low">Dưới 5 triệu</option>
-                        <option value="medium">5 - 15 triệu</option>
-                        <option value="high">15 - 30 triệu</option>
-                        <option value="premium">Trên 30 triệu</option>
-                    </select>
+                    <div class="filter-wrapper">
+                        <button class="filter-select" id="priceFilter">Giá <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-dropdown" id="priceDropdown">
+                            <div class="filter-dropdown-item" data-price="low">Dưới 5 triệu</div>
+                            <div class="filter-dropdown-item" data-price="medium">5 - 15 triệu</div>
+                            <div class="filter-dropdown-item" data-price="high">15 - 30 triệu</div>
+                            <div class="filter-dropdown-item" data-price="premium">Trên 30 triệu</div>
+                            <div style="padding: 10px 15px;">
+                                <div class="price-range">
+                                    <input type="number" class="price-input" id="minPrice" placeholder="Từ" min="0">
+                                    <span>-</span>
+                                    <input type="number" class="price-input" id="maxPrice" placeholder="Đến" min="0">
+                                    <button class="apply-price" id="applyPriceRange">Áp dụng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <select class="filter-select">
-                        <option value="" disabled selected>Sắp xếp</option>
-                        <option value="newest">Mới nhất</option>
-                        <option value="price-asc">Giá tăng dần</option>
-                        <option value="price-desc">Giá giảm dần</option>
-                        <option value="rating">Đánh giá cao</option>
-                    </select>
+                    <div class="filter-wrapper">
+                        <button class="filter-select" id="sortFilter">Sắp xếp <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-dropdown" id="sortDropdown">
+                            <div class="filter-dropdown-item" data-sort="newest">Mới nhất</div>
+                            <div class="filter-dropdown-item" data-sort="price-asc">Giá tăng dần</div>
+                            <div class="filter-dropdown-item" data-sort="price-desc">Giá giảm dần</div>
+                            <div class="filter-dropdown-item" data-sort="rating">Đánh giá cao</div>
+                        </div>
+                    </div>
+                    
+                    <button class="clear-filters" id="clearFilters">Xóa bộ lọc</button>
                 </div>
                 
-                <form class="search-box" action="sanpham.html" method="get">
-                    <input type="text" class="search-input" name="search" placeholder="Tìm kiếm sản phẩm...">
-                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-                </form>
+                <div class="search-box">
+                    <input type="text" class="search-input" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                    <button type="button" class="search-button" id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
             </div>
             
             <!-- Products item -->
-            <div class="products-item">
+            <div class="products-item" id="productsContainer">
                 <!-- Product 1 - MacBook Pro M4 -->
-                <div class="product-card">
+                <div class="product-card" data-category="laptop" data-brand="apple" data-price="39990000" data-rating="4.5" data-date="2025-01-15">
                     <div class="product-image">
                         <div class="product-tag">HOT</div>
                         <img src="/image/macprom4.jpg" alt="MacBook Pro M4">
@@ -112,7 +133,7 @@
                 </div>
                 
                 <!-- Product 2 - Samsung Galaxy S25 Ultra -->
-                <div class="product-card">
+                <div class="product-card" data-category="smartphone" data-brand="samsung" data-price="29990000" data-rating="5.0" data-date="2025-02-05">
                     <div class="product-image">
                         <div class="product-tag">NEW</div>
                         <img src="/image/samsungs25.jpg" alt="Samsung Galaxy S25 Ultra">
@@ -140,7 +161,7 @@
                 </div>
                 
                 <!-- Product 3 - Dell XPS 16 -->
-                <div class="product-card">
+                <div class="product-card" data-category="laptop" data-brand="dell" data-price="45990000" data-rating="4.0" data-date="2025-03-10">
                     <div class="product-image">
                         <div class="product-tag">SALE</div>
                         <img src="/image/dellxps16.avif" alt="Dell XPS 16">
@@ -168,7 +189,7 @@
                 </div>
                 
                 <!-- Product 4 - Sony WH-1000XM5 -->
-                <div class="product-card">
+                <div class="product-card" data-category="tainghe" data-brand="sony" data-price="7490000" data-rating="5.0" data-date="2024-12-20">
                     <div class="product-image">
                         <div class="product-tag">BEST SELLER</div>
                         <img src="/image/headphoneWH.avif" alt="Sony WH-1000XM5">
@@ -196,7 +217,7 @@
                 </div>
                 
                 <!-- Product 5 - iPad Pro M4 -->
-                <div class="product-card">
+                <div class="product-card" data-category="tablet" data-brand="apple" data-price="27790000" data-rating="4.5" data-date="2025-01-25">
                     <div class="product-image">
                         <div class="product-tag">LIMITED</div>
                         <img src="/image/ipadm4.JPG" alt="iPad Pro M4">
@@ -224,7 +245,7 @@
                 </div>
                 
                 <!-- Product 6 - Chuot may tinh-->
-                <div class="product-card">
+                <div class="product-card" data-category="phukien" data-brand="logitech" data-price="399000" data-rating="5.0" data-date="2024-11-05">
                     <div class="product-image">
                         <div class="product-tag">CHEAPEST</div>
                         <img src="/image/logitechmouse.webp" alt="Chuột máy tính Logitech M331">
@@ -252,7 +273,7 @@
                 </div>
                 
                 <!-- Product 7 - Asus ROG Zephyrus G16 -->
-                <div class="product-card">
+                <div class="product-card" data-category="laptop" data-brand="asus" data-price="62990000" data-rating="4.5" data-date="2025-02-15">
                     <div class="product-image">
                         <div class="product-tag">GAMING</div>
                         <img src="/image/Asus ROG.jpg" alt="Asus ROG Zephyrus G16">
@@ -280,7 +301,7 @@
                 </div>
                 
                 <!-- Product 8 - Xiaomi 14 Pro -->
-                <div class="product-card">
+                <div class="product-card" data-category="smartphone" data-brand="xiaomi" data-price="19990000" data-rating="4.0" data-date="2024-11-15">
                     <div class="product-image">
                         <div class="product-tag">VALUE</div>
                         <img src="/image/Xiaomi-14-Pro.jpg" alt="Xiaomi 14 Pro">
@@ -308,14 +329,20 @@
                 </div>
             </div>
             
+            <!-- No results message -->
+            <div class="no-results hidden" id="noResults">
+                <p>Không tìm thấy sản phẩm phù hợp với bộ lọc đã chọn</p>
+                <button class="clear-filters" id="clearFiltersNoResults">Xóa bộ lọc</button>
+            </div>
+            
             <!-- Pagination -->
-            <div class="pagination">
-                <a href="sanpham.html?page=1" class="page-item active">1</a>
-                <a href="sanpham.html?page=2" class="page-item">2</a>
-                <a href="sanpham.html?page=3" class="page-item">3</a>
+            <div class="pagination" id="pagination">
+                <a href="#" class="page-item active" data-page="1">1</a>
+                <a href="#" class="page-item" data-page="2">2</a>
+                <a href="#" class="page-item" data-page="3">3</a>
                 <span class="page-dots">...</span>
-                <a href="sanpham.html?page=8" class="page-item">8</a>
-                <a href="sanpham.html?page=2" class="page-item"><i class="fas fa-angle-right"></i></a>
+                <a href="#" class="page-item" data-page="8">8</a>
+                <a href="#" class="page-item" data-page="next"><i class="fas fa-angle-right"></i></a>
             </div>
         </div>
     </section>
@@ -350,10 +377,10 @@
                         <li><i class="fas fa-envelope"></i> info@hexonstore.com</li>
                     </ul>
                     <div class="social-links">
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com/hexonstore"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/hexonstore"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/hexonstore"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/hexonstore"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -376,5 +403,7 @@
             </div>
         </div>
     </footer>
+<!-- Link đến script-->
+    <script src="products.js"></script>
 </body>
 </html>
