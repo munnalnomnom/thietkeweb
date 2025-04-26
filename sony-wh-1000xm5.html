@@ -90,17 +90,18 @@
                             <a href="#" class="color-option color-white"></a>
                         </div>
                     </div>
-                    
-                    <form action="giohang.html" method="get">
-                        <input type="hidden" name="id" value="sony-wh-1000xm5">
-                        <div class="product-actions">
-                            <input type="number" name="quantity" class="quantity" value="1" min="1" max="10">
-                            <button type="submit" class="add-to-cart">Thêm vào giỏ hàng</button>
-                        </div>
-                    </form>
+                    <!-- Nút chức năng giỏ hàng-->
+                    <div class="product-actions">
+                        <input type="number" id="quantity" name="quantity" class="quantity" value="1" min="1" max="10">
+                        <button id="add-to-cart-btn" class="add-to-cart" 
+                            data-id="sony-wh-1000xm5" 
+                            data-name="Sony WH-1000XM5" 
+                            data-price="7990000" 
+                            data-image="/image/Sony-WH-1000XM5.jpg">Thêm vào giỏ hàng</button>
+                        <button id="view-cart-btn" class="view-cart-button"><i class="fas fa-shopping-cart"></i> Xem giỏ hàng</button>
+                    </div>
                 </div>
             </div>
-            
             <!-- Mo ta -->
             <h2 class="section-title">Mô tả sản phẩm</h2>
             <div class="product-description">
@@ -259,7 +260,25 @@
             </div>
         </div>
     </section>
-
+    <!-- Modal xác nhận thêm vào giỏ hàng -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Sản phẩm đã được thêm vào giỏ hàng</h3>
+            <div class="modal-product">
+                <img src="/image/Sony-WH-1000XM5.jpg" alt="Sony WH-1000XM5" class="modal-product-image">
+                <div class="modal-product-details">
+                    <h4>Sony WH-1000XM5</h4>
+                    <p class="modal-product-price">7.990.000đ</p>
+                    <p id="modal-quantity">Số lượng: 1</p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="continue-shopping" class="continue-shopping-btn">Tiếp tục mua sắm</button>
+                <button id="view-cart" class="view-cart-btn">Xem giỏ hàng</button>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -294,5 +313,6 @@
             </div>
         </div>
     </footer>
+<script src="product-script.js"></script>   
 </body>
 </html>
