@@ -73,8 +73,8 @@
                     </div>
                     
                     <div class="product-price">
-                        <span class="old-price">69.990.000đ</span>
-                        64.990.000đ
+                        <span class="old-price">65.990.000đ</span>
+                        62.990.000đ
                     </div>
                     
                     <div class="product-description">
@@ -96,15 +96,18 @@
                             <a href="#" class="config-option">RTX 4080, 32GB RAM, 1TB SSD</a>
                             <a href="#" class="config-option">RTX 4090, 32GB RAM, 2TB SSD</a>
                         </div>
+                    </div>      
+                    <!-- Nút chức năng giỏ hàng-->
+                    <div class="product-actions">
+                        <input type="number" id="quantity" name="quantity" class="quantity" value="1" min="1" max="10">
+                        <button id="add-to-cart-btn" class="add-to-cart" 
+                            data-id="asus-zephyrus-g16" 
+                            data-name="Asus ROG Zephyrus G16" 
+                            data-price="62990000" 
+                            data-image="/image/asus zephyrus.webp">Thêm vào giỏ hàng
+                        </button>
+                        <button id="view-cart-btn" class="view-cart-button"><i class="fas fa-shopping-cart"></i> Xem giỏ hàng</button>
                     </div>
-                    
-                    <form action="giohang.html" method="get">
-                        <input type="hidden" name="id" value="asus-zephyrus-g16">
-                        <div class="product-actions">
-                            <input type="number" name="quantity" class="quantity" value="1" min="1" max="10">
-                            <button type="submit" class="add-to-cart">Thêm vào giỏ hàng</button>
-                        </div>
-                    </form>
                 </div>
             </div>
             
@@ -311,6 +314,25 @@
             </div>
         </div>
     </section>
+    <!-- Modal xác nhận thêm vào giỏ hàng -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Sản phẩm đã được thêm vào giỏ hàng</h3>
+            <div class="modal-product">
+                <img src="/image/asus zephyrus.webp" alt="Asus Zephyrus G16" class="modal-product-image">
+                <div class="modal-product-details">
+                    <h4>Asus Zephyrus G16</h4>
+                    <p class="modal-product-price">62.990.000đ</p>
+                    <p id="modal-quantity">Số lượng: 1</p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="continue-shopping" class="continue-shopping-btn">Tiếp tục mua sắm</button>
+                <button id="view-cart" class="view-cart-btn">Xem giỏ hàng</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -346,5 +368,7 @@
             </div>
         </div>
     </footer>
+    
+    <script src="product-script.js"></script>
 </body>
 </html>
