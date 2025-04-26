@@ -90,13 +90,15 @@
                         </div>
                     </div>
                     
-                    <form action="giohang.html" method="get">
-                        <input type="hidden" name="id" value="logitech-m331">
-                        <div class="product-actions">
-                            <input type="number" name="quantity" class="quantity" value="1" min="1" max="10">
-                            <button type="submit" class="add-to-cart">Thêm vào giỏ hàng</button>
-                        </div>
-                    </form>
+                    <div class="product-actions">
+                        <input type="number" id="quantity" name="quantity" class="quantity" value="1" min="1" max="10">
+                        <button id="add-to-cart-btn" class="add-to-cart" 
+                            data-id="logitech-m331" 
+                            data-name="Logitech M331 Silent Plus" 
+                            data-price="399000" 
+                            data-image="/image/logitechmouse.webp">Thêm vào giỏ hàng</button>
+                        <button id="view-cart-btn" class="view-cart-button"><i class="fas fa-shopping-cart"></i> Xem giỏ hàng</button>
+                    </div>
                 </div>
             </div>
             
@@ -268,7 +270,29 @@
                         <a href="sony-wh-1000xm5.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Modal xác nhận thêm vào giỏ hàng -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Sản phẩm đã được thêm vào giỏ hàng</h3>
+            <div class="modal-product">
+                <img src="/image/logitechmouse.webp" alt="Logitech M331 Silent Plus" class="modal-product-image">
+                <div class="modal-product-details">
+                    <h4>Logitech M331 Silent Plus</h4>
+                    <p class="modal-product-price">399.000đ</p>
+                    <p id="modal-quantity">Số lượng: 1</p>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button id="continue-shopping" class="continue-shopping-btn">Tiếp tục mua sắm</button>
+                <button id="view-cart" class="view-cart-btn">Xem giỏ hàng</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -304,5 +328,6 @@
             </div>
         </div>
     </footer>
+    <script src="product-script.js"></script>
 </body>
 </html>
