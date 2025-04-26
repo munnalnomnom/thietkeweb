@@ -6,189 +6,6 @@
     <title>Sản Phẩm | HexonStore</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .products-section {
-            padding: 120px 0 60px;
-            background: linear-gradient(145deg, #151515, #0c0c0c);
-        }
-
-        .products-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        .products-title {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #f0f0f0;
-            font-size: 32px;
-            font-weight: bold;
-            position: relative;
-        }
-
-        .products-title:after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 3px;
-            background: #3498db;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .filter-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .filter-group {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .filter-select {
-            padding: 8px 15px;
-            background: #141414;
-            border: 1px solid #2a2a2a;
-            color: #e0e0e0;
-            border-radius: 5px;
-            outline: none;
-            cursor: pointer;
-        }
-
-        .filter-select:focus {
-            border-color: #3498db;
-        }
-
-        .search-box {
-            display: flex;
-            background: #141414;
-            border: 1px solid #2a2a2a;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .search-input {
-            padding: 8px 15px;
-            background: transparent;
-            border: none;
-            color: #e0e0e0;
-            outline: none;
-            width: 200px;
-        }
-
-        .search-button {
-            background: #3498db;
-            border: none;
-            color: white;
-            padding: 0 15px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .search-button:hover {
-            background: #2980b9;
-        }
-
-        .products-item {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-            gap: 10px;
-        }
-
-        .page-item {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #141414;
-            color: #e0e0e0;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .page-item.active, .page-item:hover {
-            background: #3498db;
-            color: white;
-        }
-
-        .page-dots {
-            display: flex;
-            align-items: center;
-            padding: 0 5px;
-            color: #e0e0e0;
-        }
-
-        .category-tabs {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .category-tab {
-            padding: 10px 20px;
-            margin: 5px;
-            background: #141414;
-            color: #e0e0e0;
-            border-radius: 25px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-decoration: none;
-        }
-
-        .category-tab.active, .category-tab:hover {
-            background: #3498db;
-            color: white;
-        }
-
-        @media (max-width: 992px) {
-            .products-item {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .products-item {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .filter-container {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .filter-group {
-                margin-bottom: 15px;
-                justify-content: space-between;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .products-item {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar with company name -->
@@ -270,7 +87,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">HOT</div>
-                        <img src="/WEB/image/macprom4.jpg" alt="MacBook Pro M4">
+                        <img src="/image/macprom4.jpg" alt="MacBook Pro M4">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Laptop</div>
@@ -290,7 +107,7 @@
                             <i class="fas fa-star-half-alt"></i>
                             (120)
                         </div>
-                        <a href="chitietsanpham.html?id=macbook-pro-m4" class="product-button">Xem chi tiết</a>
+                        <a href="macbook-pro-m4.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
                 
@@ -298,7 +115,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">NEW</div>
-                        <img src="/WEB/image/samsungs25.jpg" alt="Samsung Galaxy S25 Ultra">
+                        <img src="/image/samsungs25.jpg" alt="Samsung Galaxy S25 Ultra">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Smartphone</div>
@@ -318,7 +135,7 @@
                             <i class="fas fa-star"></i>
                             (85)
                         </div>
-                        <a href="chitietsanpham.html?id=galaxy-s25-ultra" class="product-button">Xem chi tiết</a>
+                        <a href="galaxy-s25.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
                 
@@ -326,7 +143,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">SALE</div>
-                        <img src="/WEB/image/dellxps16.avif" alt="Dell XPS 16">
+                        <img src="/image/dellxps16.avif" alt="Dell XPS 16">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Laptop</div>
@@ -346,7 +163,7 @@
                             <i class="far fa-star"></i>
                             (64)
                         </div>
-                        <a href="chitietsanpham.html?id=dell-xps-16" class="product-button">Xem chi tiết</a>
+                        <a href="dell-xps-16.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
                 
@@ -354,7 +171,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">BEST SELLER</div>
-                        <img src="/WEB/image/headphoneWH.avif" alt="Sony WH-1000XM5">
+                        <img src="/image/headphoneWH.avif" alt="Sony WH-1000XM5">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Tai nghe</div>
@@ -374,7 +191,7 @@
                             <i class="fas fa-star"></i>
                             (210)
                         </div>
-                        <a href="chitietsanpham.html?id=sony-wh-1000xm5" class="product-button">Xem chi tiết</a>
+                        <a href="sony-wh-1000xm5.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
                 
@@ -382,7 +199,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">LIMITED</div>
-                        <img src="/WEB/image/ipadm4.JPG" alt="iPad Pro M4">
+                        <img src="/image/ipadm4.JPG" alt="iPad Pro M4">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Tablet</div>
@@ -402,7 +219,7 @@
                             <i class="fas fa-star-half-alt"></i>
                             (98)
                         </div>
-                        <a href="chitietsanpham.html?id=ipad-pro-m4" class="product-button">Xem chi tiết</a>
+                        <a href="ipad-pro-m4.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
                 
@@ -410,7 +227,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">CHEAPEST</div>
-                        <img src="/WEB/image/logitechmouse.webp" alt="Chuột máy tính Logitech M331">
+                        <img src="/image/logitechmouse.webp" alt="Chuột máy tính Logitech M331">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Phụ kiện</div>
@@ -430,7 +247,7 @@
                             <i class="fas fa-star"></i>
                             (145)
                         </div>
-                        <a href="chitietsanpham.html?id=logitech-m331" class="product-button">Xem chi tiết</a>
+                        <a href="logitech-m331.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
                 
@@ -438,7 +255,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">GAMING</div>
-                        <img src="/WEB/image/Asus ROG.jpg" alt="Asus ROG Zephyrus G16">
+                        <img src="/image/Asus ROG.jpg" alt="Asus ROG Zephyrus G16">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Laptop</div>
@@ -458,7 +275,7 @@
                             <i class="fas fa-star-half-alt"></i>
                             (67)
                         </div>
-                        <a href="chitietsanpham.html?id=asus-rog-zephyrus-g16" class="product-button">Xem chi tiết</a>
+                        <a href="asus-zephyrus.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
                 
@@ -466,7 +283,7 @@
                 <div class="product-card">
                     <div class="product-image">
                         <div class="product-tag">VALUE</div>
-                        <img src="/WEB/image/Xiaomi-14-Pro.jpg" alt="Xiaomi 14 Pro">
+                        <img src="/image/Xiaomi-14-Pro.jpg" alt="Xiaomi 14 Pro">
                     </div>
                     <div class="product-info">
                         <div class="product-category">Smartphone</div>
@@ -486,7 +303,7 @@
                             <i class="far fa-star"></i>
                             (89)
                         </div>
-                        <a href="chitietsanpham.html?id=xiaomi-14-pro" class="product-button">Xem chi tiết</a>
+                        <a href="xiaomi-14-pro.html" class="product-button">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
