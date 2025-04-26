@@ -5,86 +5,121 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HexonStore | Hightech equipment </title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .active, .accordion:hover {
+    background-color: #1b1d1f;
+    color: white;
+}
+    </style>
     </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
-                        <li><a href="tintuc.html">TIN TỨC</a></li>
-                        <li><a href="tuyendung.html">TUYỂN DỤNG</a></li>
-                        <a href="homepage.html" class="logo">
-                            <img src="image/logo.png" alt="logo.png" width="69px"></a>
-                        <li><a href="sanpham.html">SẢN PHẨM</a></li>
-                        <li><a href="giohang.html">GIỎ HÀNG</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="login.html">LOGIN/SIGNIN</a></li>
-                    </ul>
-                    </nav>
-                 </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="tintuc.html">TIN TỨC</a></li>
+                <li><a href="tuyendung.html">TUYỂN DỤNG</a></li>
+                <div class="logo-container">
+                    <a href="homepage.html" class="logo">
+                        <img src="image/logo.png" alt="logo" width="60px">
+                    </a>
+                </div>
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="giohang.html">GIỎ HÀNG</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="login.html">ĐĂNG NHẬP</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h2 class="featured-title" style="padding-top: 20px;">Một số câu hỏi thường gặp</h2>
+        <div class="wrapper">
+        <div class="faq">
+            <button class="accordion">
+                Chính sách bảo hành điện thoại như thế nào?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+        
+                <p>
+                    Tại HexonStore, chúng tôi cam kết mang đến cho khách hàng chính sách bảo hành rõ ràng và minh bạch. Tất cả điện thoại mua tại cửa hàng đều được bảo hành theo tiêu chuẩn của nhà sản xuất, với thời gian từ 6 đến 12 tháng tùy theo từng dòng sản phẩm. Trong thời gian bảo hành, nếu điện thoại gặp lỗi kỹ thuật do nhà sản xuất, HexonStore sẽ hỗ trợ kiểm tra, sửa chữa hoặc đổi máy theo quy định. Quý khách cần giữ hóa đơn mua hàng và tem bảo hành còn nguyên vẹn để được hỗ trợ tốt nhất. Đối với các lỗi do người dùng như rơi vỡ, vào nước hay can thiệp phần mềm trái phép, chính sách bảo hành sẽ không được áp dụng. Nếu cần thêm thông tin chi tiết, quý khách có thể liên hệ trực tiếp nhân viên tại cửa hàng hoặc qua các kênh hỗ trợ của HexonStore.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Tôi có thể hủy đơn hàng sau khi đặt không?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+        
+                <p>
+                    Tại HexonStore, quý khách hoàn toàn có thể yêu cầu hủy đơn hàng sau khi đặt trong một khoảng thời gian nhất định. Cụ thể, đơn hàng chỉ có thể được hủy khi chưa được đóng gói và chuyển sang trạng thái vận chuyển. Để hủy đơn, quý khách vui lòng liên hệ với bộ phận chăm sóc khách hàng của HexonStore qua số điện thoại, fanpage hoặc email sớm nhất có thể sau khi đặt hàng. Sau khi đơn hàng đã được giao cho đơn vị vận chuyển, việc hủy sẽ không còn hiệu lực và quý khách cần nhận hàng như bình thường rồi tiến hành đổi trả nếu có nhu cầu. HexonStore luôn cố gắng xử lý các yêu cầu hủy đơn nhanh chóng và linh hoạt để mang lại trải nghiệm tốt nhất cho khách hàng.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Tôi có thể đổi trả sản phẩm trong bao lâu?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+        
+                <p>HexonStore hỗ trợ đổi trả sản phẩm trong vòng 7 ngày kể từ ngày nhận hàng đối với các sản phẩm bị lỗi kỹ thuật, giao sai mẫu hoặc không đúng mô tả. Sản phẩm cần giữ nguyên trạng thái ban đầu, không bị trầy xước hay can thiệp kỹ thuật, kèm theo đầy đủ hóa đơn và phụ kiện. Đối với các lý do đổi trả không phải do lỗi của HexonStore, khách hàng có thể chịu thêm một khoản phí vận chuyển hoặc xử lý đơn hàng. Mọi trường hợp sẽ được kiểm tra và hỗ trợ nhanh chóng, minh bạch.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                HexonStore có giao hàng toàn quốc không?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>HexonStore hiện hỗ trợ giao hàng trên toàn quốc thông qua các đối tác vận chuyển uy tín. Thời gian giao hàng từ 1–5 ngày làm việc tùy vào khu vực và địa chỉ nhận hàng. Đơn hàng sẽ được đóng gói cẩn thận, đảm bảo nguyên vẹn khi đến tay khách. Quý khách sẽ nhận được mã vận đơn để theo dõi lộ trình giao hàng và có thể liên hệ ngay nếu gặp bất kỳ vấn đề gì trong quá trình nhận hàng.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                HexonStore có hỗ trợ trả góp không?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+        
+                <p>Hiện tại, HexonStore có hỗ trợ hình thức mua hàng trả góp qua thẻ tín dụng của nhiều ngân hàng hoặc qua các đối tác tài chính uy tín. Thủ tục đơn giản, duyệt nhanh, khách hàng chỉ cần có thẻ tín dụng hợp lệ hoặc giấy tờ cá nhân cơ bản. Các gói trả góp có kỳ hạn linh hoạt từ 3 đến 12 tháng, lãi suất ưu đãi, tùy theo chương trình áp dụng tại thời điểm mua hàng. Quý khách có thể liên hệ trực tiếp để được tư vấn chi tiết trước khi thanh toán.</p>
+            </div>
         </div>
     </div>
+    <form class="review-form" action="submit-review.html" method="post">
+        <h3>Gửi câu hỏi cho chúng tôi</h3>
+        
+        <div class="form-group">
+            <label class="form-label"></label>
+            <textarea class="form-textarea" name="review_content" placeholder="Viết câu hỏi của bạn..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Tên của bạn *</label>
+            <input type="text" name="name" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label">Email của bạn *</label>
+            <input type="email" name="email" class="form-input" required>
+        </div>
+        
+        <button type="submit" class="submit-btn">Gửi câu hỏit</button>
+    </form>
+    </div>
     
-<div>
 
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat commodi eveniet reiciendis, animi placeat fugit quibusdam? Deleniti, similique maxime eum iste laborum sint aliquid, corporis tempore aperiam facere repellendus omnis!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequatur earum ducimus iusto sint, autem error placeat commodi, pariatur quas magnam provident temporibus voluptate praesentium aperiam eos nobis quidem a?
 
-</div>
 
 <footer class="footer">
     <div class="footer-container">
@@ -141,5 +176,24 @@
         </div>
     </div>
 </footer>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
 </body>
 </html>
