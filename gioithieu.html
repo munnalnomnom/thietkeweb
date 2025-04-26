@@ -6,7 +6,64 @@
         <title>HexonStore | Hightech equipment </title>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+        <style>
+            /* Animation */
+            .animate-section {
+                opacity: 0;
+                transform: translateX(100px);
+                transition: all 1s ease;
+            }
+            
+            .animate-section.animate-right {
+                transform: translateX(100px);
+            }
+            
+            .animate-section.animate-left {
+                transform: translateX(-100px);
+            }
+            
+            .animate-section.show {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            
+            .animate-delay-1 {
+                transition-delay: 0.2s;
+            }
+            
+            .animate-delay-2 {
+                transition-delay: 0.4s;
+            }
+            
+            .animate-delay-3 {
+                transition-delay: 0.6s;
+            }
+            
+            .animate-delay-4 {
+                transition-delay: 0.8s;
+            }
+            
+            /* Adding a fade-in animation for the main title */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .featured-title {
+                animation: fadeIn 1.2s ease forwards;
+            }
+            
+            /* Smooth scrolling */
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
     </head>
 <body>
     <div class="navbar">
@@ -34,56 +91,73 @@
             <h2 class="featured-title">Về chúng tôi</h2>
         </div>
     </section>
-     <div class="row-center">
+     <div class="row-center animate-section animate-right">
                 <div class="col-5">
                     <div class="circle"><img src="image/pepebattay.svg" alt=""></div>
                 </div>
                 <div class="col-5">
+                    <h2 style="padding-bottom: 10px;">Giới thiệu chung</h2>
                     <p>
-                        HexonStore là hệ thống bán lẻ chuyên cung cấp điện thoại và laptop chính hãng, uy tín. Chúng tôi luôn đặt khách hàng làm trung tâm, cam kết mang đến sản phẩm chất lượng cao cùng trải nghiệm mua sắm dễ dàng, nhanh chóng và đáng tin cậy.
+                        HexonStore là hệ thống bán lẻ chuyên cung cấp điện thoại và laptop chính hãng, uy tín. Chúng tôi luôn đặt khách hàng làm trung tâm, cam kết mang đến sản phẩm chất lượng cao cùng trải nghiệm mua sắm dễ dàng, nhanh chóng và đáng tin cậy. Với đội ngũ tư vấn chuyên nghiệp, HexonStore tự hào là đối tác tin cậy của nhiều khách hàng và thương hiệu công nghệ lớn trên thị trường.
                     </p>
                     
                 </div>
             </div>
-            <div class="row-center" style="background: rgb(61, 60, 60);">
+            <div class="row-center animate-section animate-left animate-delay-1" style="background: rgb(61, 60, 60);">
                 <div class="col-5">
                     <h2 style="padding-bottom: 10px;">Lịch sử hình thành</h2>
-                    <p>HexonStore được thành lập vào năm 2020, khởi đầu từ một cửa hàng nhỏ với niềm đam mê công nghệ. Sau nhiều năm phát triển, chúng tôi đã mở rộng hệ thống và phục vụ hàng chục nghìn khách hàng trên toàn quốc với sự tin tưởng và hài lòng.</p>
+                    <p>HexonStore được thành lập vào năm 2020, khởi đầu từ một cửa hàng nhỏ với niềm đam mê công nghệ. Sau nhiều năm phát triển, chúng tôi đã mở rộng hệ thống và phục vụ hàng chục nghìn khách hàng trên toàn quốc với sự tin tưởng và hài lòng. Hiện nay, HexonStore đã có mặt tại 10 tỉnh thành lớn với 15 cửa hàng và hệ thống bán hàng trực tuyến hiện đại, thuận tiện cho khách hàng mua sắm mọi lúc, mọi nơi.</p>
                 </div>
                 <div class="col-5">
                     <img src="image/pepelapnghiep.svg" alt="">
                 </div>
             </div>
 
-            <div class="row-center">
+            <div class="row-center animate-section animate-right animate-delay-2">
                 <div class="col-5">
                     <div class="circle"><img src="image/pepelantoa.svg" alt=""></div>
                 </div>
                 <div class="col-5">
                     <h2 style="padding-bottom: 10px;">Sứ mệnh</h2>
                     <p>
-                        Chúng tôi mong muốn mang công nghệ đến gần hơn với mọi người bằng các sản phẩm chất lượng, giá hợp lý và dịch vụ tận tâm. TechZone không chỉ bán hàng, mà còn đồng hành cùng khách hàng trong hành trình số hóa cuộc sống và công việc.    
+                        Chúng tôi mong muốn mang công nghệ đến gần hơn với mọi người bằng các sản phẩm chất lượng, giá hợp lý và dịch vụ tận tâm. HexonStore không chỉ bán hàng, mà còn đồng hành cùng khách hàng trong hành trình số hóa cuộc sống và công việc. Sứ mệnh của chúng tôi là tạo ra môi trường mua sắm công nghệ uy tín, nơi khách hàng có thể hoàn toàn tin tưởng về chất lượng sản phẩm và dịch vụ hậu mãi.
                     </p>
                     
                 </div>
             </div>
-            <div class="row-center" style="background: rgb(61, 60, 60);">
+            <div class="row-center animate-section animate-left animate-delay-3" style="background: rgb(61, 60, 60);">
                 <div class="col-5">
                     <h2 style="padding-bottom: 10px;">Đội ngũ nhân viên</h2>
-                    <p>HexonStore sở hữu đội ngũ nhân viên trẻ trung, nhiệt huyết và am hiểu công nghệ. Tất cả đều được đào tạo bài bản, sẵn sàng hỗ trợ và tư vấn để mang đến cho khách hàng sự lựa chọn phù hợp nhất và dịch vụ tốt nhất.</p>
+                    <p>HexonStore sở hữu đội ngũ nhân viên trẻ trung, nhiệt huyết và am hiểu công nghệ. Tất cả đều được đào tạo bài bản, sẵn sàng hỗ trợ và tư vấn để mang đến cho khách hàng sự lựa chọn phù hợp nhất và dịch vụ tốt nhất. Đội ngũ kỹ thuật viên của chúng tôi được đào tạo chuyên sâu và cập nhật thường xuyên về các sản phẩm mới, đảm bảo khả năng tư vấn và hỗ trợ khách hàng một cách chuyên nghiệp nhất.</p>
                 </div>
                 <div class="col-5">
                     <img src="image/pepevadanem.svg" style="max-width: 425px;" alt="">
                 </div>
             </div>
-
-
-
-
-
-
-
-
+            
+            <div class="row-center animate-section animate-right animate-delay-4">
+                <div class="col-5">
+                    <div class="circle"><img src="image/pepebattay.svg" alt=""></div>
+                </div>
+                <div class="col-5">
+                    <h2 style="padding-bottom: 10px;">Cam kết chất lượng</h2>
+                    <p>
+                        Tại HexonStore, chúng tôi cam kết cung cấp những sản phẩm chính hãng với chất lượng tốt nhất. Mọi sản phẩm đều được bảo hành chính hãng và có chính sách đổi trả linh hoạt trong 30 ngày. Chúng tôi không ngừng nâng cao chất lượng dịch vụ để mang đến trải nghiệm tốt nhất cho khách hàng, từ khâu tư vấn, mua hàng đến dịch vụ hậu mãi.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row-center animate-section animate-left animate-delay-4" style="background: rgb(61, 60, 60);">
+                <div class="col-5">
+                    <h2 style="padding-bottom: 10px;">Tầm nhìn phát triển</h2>
+                    <p>
+                        HexonStore định hướng trở thành một trong những đơn vị phân phối thiết bị công nghệ uy tín hàng đầu Việt Nam. Chúng tôi không ngừng mở rộng hệ thống cửa hàng, nâng cao chất lượng dịch vụ và đa dạng hóa sản phẩm nhằm đáp ứng tốt hơn nhu cầu của khách hàng. HexonStore cam kết luôn là đối tác tin cậy, đồng hành cùng khách hàng trong thời đại số.
+                    </p>
+                </div>
+                <div class="col-5">
+                    <img src="image/pepelapnghiep.svg" alt="">
+                </div>
+            </div>
 
 <footer class="footer">
     <div class="footer-container">
@@ -140,5 +214,35 @@
         </div>
     </div>
 </footer>
+
+<!-- JavaScript để kích hoạt animation -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Hiển thị animation ngay khi trang được tải
+        setTimeout(function() {
+            animateSections();
+        }, 300);
+        
+        // Thiết lập sự kiện cuộn để kích hoạt animation khi người dùng cuộn trang
+        window.addEventListener('scroll', function() {
+            animateSections();
+        });
+    });
+    
+    function animateSections() {
+        const sections = document.querySelectorAll('.animate-section');
+        
+        sections.forEach(section => {
+            // Kiểm tra xem phần tử có trong tầm nhìn hay không
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            // Nếu phần tử đã hiển thị trong cửa sổ trình duyệt, thêm class "show"
+            if (sectionTop < windowHeight - 100) {
+                section.classList.add('show');
+            }
+        });
+    }
+</script>
 </body>
 </html>
